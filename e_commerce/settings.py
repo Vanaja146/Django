@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '*'
-    
+
 ]
 
 
@@ -76,9 +76,12 @@ TEMPLATES = [
     },
 ]
 
-CORS_ALLOWED_ORIGINS = [
-   "http://localhost:5173",   # React default port
-]
+# CORS_ALLOWED_ORIGINS = [
+#    "http://localhost:5173",   # React default port
+# ]
+
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 WSGI_APPLICATION = 'e_commerce.wsgi.application'
 
