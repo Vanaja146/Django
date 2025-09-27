@@ -7,7 +7,7 @@ from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.decorators import permission_classes
 
 @api_view(['GET'])
-#@permission_classes([IsAuthenticated])  # Allow only authenticated users to access this view
+# @permission_classes([IsAuthenticated])  # Allow only authenticated users to access this view
 def product_list(request):
     products = Product.objects.all()
     serializer = ProductSerializer(products, many=True)
